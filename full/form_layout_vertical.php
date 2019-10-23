@@ -450,6 +450,14 @@
 							</ul>
 						</li>
 						
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Tutorias</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
+								<li class="nav-item"><a href="form_layout_turoria.php" class="nav-link">Formulario</a></li>
+								<li class="nav-item"><a href="datatable_tutoria.php" class="nav-link">Lista</a></li>
+							</ul>
+						</li>
+						
 						<!-- /forms -->
 
 						<!-- /page kits -->

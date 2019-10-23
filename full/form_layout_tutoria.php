@@ -23,11 +23,20 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<script src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="assets/js/plugins/pickers/anytime.min.js"></script>
+	<script src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script src="assets/js/plugins/notifications/jgrowl.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="assets/js/demo_pages/form_layouts.js"></script>
+	<script src="assets/js/demo_pages/picker_date.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -412,11 +421,11 @@
 							</a>
 						</li>
 						
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_horizontal.php" class="nav-link">Formulario</a></li>
-								<li class="nav-item"><a href="datatable_basic.php" class="nav-link active">Lista</a></li>
+								<li class="nav-item"><a href="datatable_basic.php" class="nav-link">Lista</a></li>
 							</ul>
 						</li>
 						
@@ -441,7 +450,7 @@
 								<li class="nav-item"><a href="datatable_materia.php" class="nav-link">Lista</a></li>
 							</ul>
 						</li>
-																		
+												
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Transporte</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
@@ -449,10 +458,10 @@
 							</ul>
 						</li>
 						
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_turoria.php" class="nav-link">Formulario</a></li>
+								<li class="nav-item"><a href="form_layout_turoria.php" class="nav-link active">Formulario</a></li>
 								<li class="nav-item"><a href="datatable_tutoria.php" class="nav-link">Lista</a></li>
 							</ul>
 						</li>
@@ -477,7 +486,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alumnos</span> - Lista</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorias</span> - Formulario</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -494,8 +503,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.php" class="breadcrumb-item">Alumnos</a>
-							<span class="breadcrumb-item active">Lista</span>
+							<a href="form_layout_horizontal.php" class="breadcrumb-item">Tutorias</a>
+							<span class="breadcrumb-item active">Tutorias</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -532,10 +541,15 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Basic datatable -->
+				<!-- Horizontal form options -->
+				
+				<!-- /fieldset legend -->
+
+
+				<!-- 2 columns form -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Lista de alumno</h5>
+						<h5 class="card-title">Tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -544,259 +558,145 @@
 		                	</div>
 	                	</div>
 					</div>
-					
-					<div class="text-right" style="padding: 10px ">
-		                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_form_horizontal"><i class="icon-cog3 mr-2"></i> Agregar</button>
-	                </div>
-					
-					<table class="table datatable-basic">
-						<thead>
-							<tr>
-								<th>Matricula</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Correo</th>
-								<th>Celular</th>
-								<th>Estado</th>
-								<th class="text-center">Acciones</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1930001</td>
-								<td>Marth</td>
-								<td>Enright</td>
-								<td>ITI</td>
-								<td>1930001@upv.edu.mx</td>
-								<td>8341235341</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item class=" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+					<div class="card-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i> Detalles de tutoria</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">ID:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="001">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930002</td>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td>ITM</td>
-								<td>1930002@upv.edu.mx</td>
-								<td>8347548532</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Inicio de Programacion">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930003</td>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>ISA</td>
-								<td>1930003@upv.edu.mx</td>
-								<td>8342549865</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha:</label>
+											<div class="input-group col-lg-9">
+												<span class="input-group-prepend">
+													<span class="input-group-text"><i class="icon-calendar22"></i></span>
+												</span>
+												<input type="text" class="form-control daterange-single" value="03/18/2019">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930004</td>
-								<td>Nathalie</td>
-								<td>Pretty</td>
-								<td>ITI</td>
-								<td>1930004@upv.edu.mx</td>
-								<td>8343514789</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Sesion:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona la sesion" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="H1">7:00</option>
+													<option value="H2">8:00</option>
+													<option value="H3">9:00</option>
+													<option value="H4">10:00</option>
+													<option value="H5">11:00</option>
+												</select>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930005</td>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>LAYGE</td>
-								<td>1930005@upv.edu.mx</td>
-								<td>8345684216</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+
+									</fieldset>
+								</div>
+
+								<div class="col-md-6">
+									<fieldset>
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Detalles personales</legend>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matricula:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="1930001">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930006</td>
-								<td>Maxine</td>
-								<td>Woldt</td>
-								<td>ISA</td>
-								<td>1930006@upv.edu.mx</td>
-								<td>8348965413</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre de alumno:</label>
+											<div class="col-lg-9">
+												<div class="row">
+													<div class="col-md-6">
+														<input type="text" placeholder="Nombre" class="form-control">
+													</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+													<div class="col-md-6">
+														<input type="text" placeholder="Apellido" class="form-control">
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930007</td>
-								<td>Sylvia</td>
-								<td>Mcgaughy</td>
-								<td>IM</td>
-								<td>1930007@upv.edu.mx</td>
-								<td>8347758988</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona la carrera" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="AIM">IM</option>
+													<option value="AISA">ISA</option>
+													<option value="AITI">ITI</option>
+													<option value="AITM">ITM</option>
+													<option value="ALAYGE">LAYGE</option>
+												</select>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930008</td>
-								<td>Lizzee</td>
-								<td>Goodlow</td>
-								<td>IM</td>
-								<td>1930008@upv.edu.mx</td>
-								<td>8347777541</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matricula de maestro:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="1001">
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930009</td>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>ITI</td>
-								<td>1930009@upv.edu.mx</td>
-								<td>8342223589</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre de maestro:</label>
+											<div class="col-lg-9">
+												<div class="row">
+													<div class="col-md-6">
+														<input type="text" placeholder="Nombre" class="form-control">
+													</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+													<div class="col-md-6">
+														<input type="text" placeholder="Apellido" class="form-control">
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930010</td>
-								<td>Chantal</td>
-								<td>Nailor</td>
-								<td>ITI</td>
-								<td>1930010@upv.edu.mx</td>
-								<td>8346844754</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
+										
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Selecciona la carrera" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<option value="MIM">IM</option>
+													<option value="MISA">ISA</option>
+													<option value="MITI">ITI</option>
+													<option value="MITM">ITM</option>
+													<option value="MLAYGE">LAYGE</option>
+												</select>
 											</div>
 										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+
+										
+
+									</fieldset>
+								</div>
+							</div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+							</div>
+						</form>
+					</div>
 				</div>
-				<!-- /basic datatable -->
+				<!-- /2 columns form -->
 
 			</div>
 			<!-- /content area -->
@@ -827,232 +727,6 @@
 
 		</div>
 		<!-- /main content -->
-		
-		<!-- Horizontal form modal -->
-				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Agregar alumno</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Eugene" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Kopyov" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matricula</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1001" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Contrasenia</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="contrasenia" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Email</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
-											<span class="form-text text-muted">name@domain.com</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Celular</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
-											<span class="form-text text-muted">+99-99-9999-9999</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Domicilio</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Munich" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Bayern" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Codigo Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
-										</div>
-									</div>
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-									<button type="submit" class="btn bg-primary">Submit form</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- /horizontal form modal -->
-				
-				<!-- Horizontal form modal2 -->
-				<div id="modal_form_horizontal2" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Modificar alumno</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Eugene" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Kopyov" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matricula</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1001" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Contrasenia</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="contrasenia" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Email</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
-											<span class="form-text text-muted">name@domain.com</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Celular</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
-											<span class="form-text text-muted">+99-99-9999-9999</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Domicilio</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Munich" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Bayern" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Codigo Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
-										</div>
-									</div>
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-									<button type="submit" class="btn bg-primary">Submit form</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- /horizontal form modal2 -->
-				
-				<!-- Warning modal -->
-				<div id="modal_theme_warning" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header bg-warning">
-								<h6 class="modal-title">Advertencia!</h6>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<h6 class="font-weight-semibold">Eliminar cuenta</h6>
-								<p>Al hacer siguiente opcion la cuenta se eliminara completamente por siempre, estas seguro de seguir?</p>
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Cerrar</button>
-								<button type="button" class="btn bg-warning">Aceptar</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /warning modal -->
-				
 
 	</div>
 	<!-- /page content -->

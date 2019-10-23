@@ -412,11 +412,11 @@
 							</a>
 						</li>
 						
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Alumnos</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_horizontal.php" class="nav-link">Formulario</a></li>
-								<li class="nav-item"><a href="datatable_basic.php" class="nav-link active">Lista</a></li>
+								<li class="nav-item"><a href="datatable_basic.php" class="nav-link">Lista</a></li>
 							</ul>
 						</li>
 						
@@ -449,11 +449,11 @@
 							</ul>
 						</li>
 						
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_turoria.php" class="nav-link">Formulario</a></li>
-								<li class="nav-item"><a href="datatable_tutoria.php" class="nav-link">Lista</a></li>
+								<li class="nav-item"><a href="form_layout_tutoria.php" class="nav-link">Formulario</a></li>
+								<li class="nav-item"><a href="datatable_tutoria.php" class="nav-link active">Lista</a></li>
 							</ul>
 						</li>
 						
@@ -477,7 +477,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Alumnos</span> - Lista</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Tutorias</span> - Lista</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -494,7 +494,7 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.php" class="breadcrumb-item">Alumnos</a>
+							<a href="datatable_basic.php" class="breadcrumb-item">Tutorias</a>
 							<span class="breadcrumb-item active">Lista</span>
 						</div>
 
@@ -535,7 +535,7 @@
 				<!-- Basic datatable -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Lista de alumno</h5>
+						<h5 class="card-title">Lista de tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -552,25 +552,25 @@
 					<table class="table datatable-basic">
 						<thead>
 							<tr>
-								<th>Matricula</th>
-								<th>Nombre</th>
-								<th>Apellido</th>
-								<th>Carrera</th>
-								<th>Correo</th>
-								<th>Celular</th>
+								<th>ID</th>
+								<th>Fecha</th>
+								<th>Sesion</th>
+								<th>Tema atendido</th>
+								<th>Alumno</th>
+								<th>Maestro</th>
 								<th>Estado</th>
 								<th class="text-center">Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1930001</td>
-								<td>Marth</td>
-								<td>Enright</td>
-								<td>ITI</td>
-								<td>1930001@upv.edu.mx</td>
-								<td>8341235341</td>
-								<td><span class="badge badge-success">Active</span></td>
+								<td>001</td>
+								<td>2019/10/22</td>
+								<td>9:00</td>
+								<td>Inicio de programacion</td>
+								<td>Juan</td>
+								<td>Mario</td>
+								<td><span class="badge badge-success">Finalizado</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -587,13 +587,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930002</td>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td>ITM</td>
-								<td>1930002@upv.edu.mx</td>
-								<td>8347548532</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
+								<td>002</td>
+								<td>2019/10/23</td>
+								<td>8:00</td>
+								<td>Inicio de programacion</td>
+								<td>Sergio</td>
+								<td>Dulce</td>
+								<td><span class="badge badge-secondary">En espera</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -610,13 +610,13 @@
 								</td>
 							</tr>
 							<tr>
-								<td>1930003</td>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>ISA</td>
-								<td>1930003@upv.edu.mx</td>
-								<td>8342549865</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
+								<td>003</td>
+								<td>2019/10/23</td>
+								<td>10:00</td>
+								<td>Inicio de programacion</td>
+								<td>Alejandro</td>
+								<td>Carla</td>
+								<td><span class="badge badge-danger">Cancelado</span></td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -632,167 +632,7 @@
 									</div>
 								</td>
 							</tr>
-							<tr>
-								<td>1930004</td>
-								<td>Nathalie</td>
-								<td>Pretty</td>
-								<td>ITI</td>
-								<td>1930004@upv.edu.mx</td>
-								<td>8343514789</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930005</td>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>LAYGE</td>
-								<td>1930005@upv.edu.mx</td>
-								<td>8345684216</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930006</td>
-								<td>Maxine</td>
-								<td>Woldt</td>
-								<td>ISA</td>
-								<td>1930006@upv.edu.mx</td>
-								<td>8348965413</td>
-								<td><span class="badge badge-info">Pendiente</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930007</td>
-								<td>Sylvia</td>
-								<td>Mcgaughy</td>
-								<td>IM</td>
-								<td>1930007@upv.edu.mx</td>
-								<td>8347758988</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930008</td>
-								<td>Lizzee</td>
-								<td>Goodlow</td>
-								<td>IM</td>
-								<td>1930008@upv.edu.mx</td>
-								<td>8347777541</td>
-								<td><span class="badge badge-danger">Suspendido</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930009</td>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>ITI</td>
-								<td>1930009@upv.edu.mx</td>
-								<td>8342223589</td>
-								<td><span class="badge badge-success">Activo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>1930010</td>
-								<td>Chantal</td>
-								<td>Nailor</td>
-								<td>ITI</td>
-								<td>1930010@upv.edu.mx</td>
-								<td>8346844754</td>
-								<td><span class="badge badge-secondary">Inactivo</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="" class="dropdown-item" data-toggle="modal" data-target="#modal_form_horizontal2"><i class="icon-pencil7"></i> Modificar</a>
-												<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal_theme_warning"><i class="icon-trash"></i> Eliminar</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
+							
 						</tbody>
 					</table>
 				</div>
@@ -827,208 +667,6 @@
 
 		</div>
 		<!-- /main content -->
-		
-		<!-- Horizontal form modal -->
-				<div id="modal_form_horizontal" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Agregar alumno</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Eugene" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Kopyov" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matricula</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1001" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Contrasenia</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="contrasenia" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Email</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
-											<span class="form-text text-muted">name@domain.com</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Celular</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
-											<span class="form-text text-muted">+99-99-9999-9999</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Domicilio</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Munich" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Bayern" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Codigo Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
-										</div>
-									</div>
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-									<button type="submit" class="btn bg-primary">Submit form</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- /horizontal form modal -->
-				
-				<!-- Horizontal form modal2 -->
-				<div id="modal_form_horizontal2" class="modal fade" tabindex="-1">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Modificar alumno</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<form action="#" class="form-horizontal">
-								<div class="modal-body">
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Nombre</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Eugene" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Apellido</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Kopyov" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Matricula</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1001" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Contrasenia</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="contrasenia" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Carrera</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="ITI" class="form-control">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Email</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="eugene@kopyov.com" class="form-control">
-											<span class="form-text text-muted">name@domain.com</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Celular</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control">
-											<span class="form-text text-muted">+99-99-9999-9999</span>
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Domicilio</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Ring street 12, building D, flat #67" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Ciudad</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Munich" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Estado</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="Bayern" class="form-control">
-										</div>
-									</div>
-
-									<div class="form-group row">
-										<label class="col-form-label col-sm-3">Codigo Postal</label>
-										<div class="col-sm-9">
-											<input type="text" placeholder="1031" class="form-control">
-										</div>
-									</div>
-								</div>
-
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-									<button type="submit" class="btn bg-primary">Submit form</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- /horizontal form modal2 -->
 				
 				<!-- Warning modal -->
 				<div id="modal_theme_warning" class="modal fade" tabindex="-1">
@@ -1040,8 +678,21 @@
 							</div>
 
 							<div class="modal-body">
-								<h6 class="font-weight-semibold">Eliminar cuenta</h6>
-								<p>Al hacer siguiente opcion la cuenta se eliminara completamente por siempre, estas seguro de seguir?</p>
+
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Usuario:</label>
+									<div class="col-lg-9">
+										<input type="text" class="form-control" placeholder="Admin">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label class="col-lg-3 col-form-label">Contraseña:</label>
+									<div class="col-lg-9">
+										<input type="text" class="form-control" placeholder="****">
+									</div>
+								</div>
+								
 							</div>
 
 							<div class="modal-footer">
@@ -1051,6 +702,8 @@
 						</div>
 					</div>
 				</div>
+				
+				
 				<!-- /warning modal -->
 				
 

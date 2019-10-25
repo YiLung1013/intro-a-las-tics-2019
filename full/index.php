@@ -602,6 +602,8 @@
 						<!-- /traffic sources -->
 
 					</div>
+					
+					
 
 					<div class="col-xl-5">
 
@@ -653,8 +655,61 @@
 							</div>
 						</div>
 						<!-- /sales stats -->
+						
+						
 
 					</div>
+					
+					<!-- Quick stats boxes -->
+						<div class="row">
+							<div class="col-lg-6">
+
+								<!-- Members online -->
+								<div class="card bg-teal-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">3,450</h3>
+											<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
+					                	</div>
+					                	
+					                	<div>
+											Members online
+											<div class="font-size-sm opacity-75">489 avg</div>
+										</div>
+									</div>
+
+									<div class="container-fluid">
+										<div id="members-online"></div>
+									</div>
+								</div>
+								<!-- /members online -->
+
+							</div>
+
+							<div class="col-lg-6">
+
+								<!-- Current server load -->
+								<div class="card bg-pink-400">
+									<div class="card-body">
+										<div class="d-flex">
+											<h3 class="font-weight-semibold mb-0">49.4%</h3>
+
+					                	</div>
+					                	
+					                	<div>
+											Current server load
+											<div class="font-size-sm opacity-75">34.6% avg</div>
+										</div>
+									</div>
+
+									<div id="server-load"></div>
+								</div>
+								<!-- /current server load -->
+
+							</div>
+						</div>
+						<!-- /quick stats boxes -->
+						
 				</div>
 				<!-- /main charts -->
 

@@ -461,7 +461,7 @@
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Tutorias</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
-								<li class="nav-item"><a href="form_layout_tutoria.php" class="nav-link active">Formulario</a></li>
+								<li class="nav-item"><a href="form_layout_turoria.php" class="nav-link active">Formulario</a></li>
 								<li class="nav-item"><a href="datatable_tutoria.php" class="nav-link">Lista</a></li>
 							</ul>
 						</li>

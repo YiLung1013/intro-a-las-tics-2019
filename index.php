@@ -27,11 +27,13 @@
 
 <style>
 
-.contentindex {
+.row {
 border: solid 2px #f1f1f1;
-border-radius: 30px;
-margin: auto;
-width: auto;
+border-radius: 3px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -150px 0 0 -300px;
 padding: 2px;
 }
 
@@ -42,7 +44,6 @@ padding: 2px;
 
 
 				<!-- Outline button (default colors) -->
-				<div class="contentindex">
 				<div class="row" >
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
@@ -55,7 +56,6 @@ padding: 2px;
 	                    	</div>
 						</div>
 					</div>
-				</div>
 				</div>
 				<!-- /outline button (default colors) -->
 

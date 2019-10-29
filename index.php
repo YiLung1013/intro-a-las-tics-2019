@@ -29,9 +29,8 @@
 
 .contentindex {
 border: solid 2px #f1f1f1;
-border-radius: 60px;
-align: center; 
-valign: center;
+border-radius: 3px;
+margin:0px auto;
 padding: 2px;
 }
 

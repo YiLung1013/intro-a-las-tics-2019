@@ -35,7 +35,7 @@ display: flex;
 flex-direction: column;
 margin: 32px auto;
 padding: 32px;
-text-align: center;
+text-align: auto;
 width: auto;;
 }
 
@@ -51,7 +51,7 @@ width: auto;;
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
 							<div class="text-center">
-								<h6 class="m-0 font-weight-semibold">Entrada</h6>
+								<h6>Entrada</h6>
 
 		                    	<button type="button" class="btn btn-outline-primary"><a class="button" href="/sistema">Sistema</a></button>
 		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1"><a class="button" href="/misitio">Mi Sitio</a></button>

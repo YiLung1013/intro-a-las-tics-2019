@@ -30,7 +30,6 @@
 
 
 				<!-- Outline button (default colors) -->
-				<center>
 				<div class="row" >
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
@@ -38,13 +37,12 @@
 								<h6 class="m-0 font-weight-semibold">Entrada</h6>
 								<p class="text-muted mb-3">Acceso a las paginas</p>
 
-		                    	<button type="button" class="btn btn-outline-primary">Sistema</button>
-		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1">Mi Sitio</button>
+		                    	<button type="button" class="btn btn-outline-primary" href="/sistema">Sistema</button>
+		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1" href="/misitio">Mi Sitio</button>
 	                    	</div>
 						</div>
 					</div>
 				</div>
-				</center>
 				<!-- /outline button (default colors) -->
 
 </body>

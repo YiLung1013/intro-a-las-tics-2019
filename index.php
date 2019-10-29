@@ -29,11 +29,10 @@
 
 .contentindex {
 border: solid 2px #f1f1f1;
-border-radius: 3px;
+border-radius: 60px;
 display: flex;
 margin: auto;
 padding: 32px;
-width: auto;;
 }
 
 

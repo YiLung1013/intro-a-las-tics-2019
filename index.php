@@ -31,6 +31,7 @@
 border: solid 2px #f1f1f1;
 border-radius: 30px;
 margin: auto;
+width: auto;
 padding: 2px;
 }
 
@@ -42,7 +43,7 @@ padding: 2px;
 
 				<!-- Outline button (default colors) -->
 				<div class="contentindex">
-				<div class="row">
+				<div class="row" >
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
 							<div class="text-center">

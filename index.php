@@ -25,25 +25,12 @@
 	<script src="sistema/assets/js/demo_pages/components_buttons.js"></script>
 	<!-- /theme JS files -->
 
-<style>
-
-.row {
-border: solid 2px #f1f1f1;
-border-radius: 3px;
-position: absolute;
-top: 50%;
-left: 50%;
-margin: -150px 0 0 -300px;
-padding: 2px;
-}
-
-
-</style>
 </head>
 <body>
 
 
 				<!-- Outline button (default colors) -->
+				<center>
 				<div class="row" >
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
@@ -57,6 +44,7 @@ padding: 2px;
 						</div>
 					</div>
 				</div>
+				</center>
 				<!-- /outline button (default colors) -->
 
 </body>

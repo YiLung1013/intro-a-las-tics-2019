@@ -30,6 +30,8 @@
 .contentindex {
 border: solid 2px #f1f1f1;
 border-radius: 60px;
+align: center; 
+valign: center;
 padding: 2px;
 }
 

@@ -27,7 +27,7 @@
 
 <style>
 
-.content {
+.contentindex {
 align-items: center;
 border: solid 2px #f1f1f1;
 border-radius: 3px;
@@ -46,7 +46,7 @@ width: 960px;;
 
 
 <!-- Outline button (default colors) -->
-			<div class="content">
+			<div class="contentindex">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">

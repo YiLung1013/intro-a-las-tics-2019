@@ -37,8 +37,8 @@
 								<h6 class="m-0 font-weight-semibold">Entrada</h6>
 								<p class="text-muted mb-3">Acceso a las paginas</p>
 
-		                    	<button type="button" class="btn btn-outline-primary" href="/sistema">Sistema</button>
-		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1" href="/misitio">Mi Sitio</button>
+		                    	<button type="button" class="btn btn-outline-primary"><a href="/sistema">Sistema</a></button>
+		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1"><a href="/misitio">Mi Sitio</a></button>
 	                    	</div>
 						</div>
 					</div>

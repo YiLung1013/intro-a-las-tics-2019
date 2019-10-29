@@ -28,7 +28,7 @@
 <style>
 
 .contentindex {
-border: solid 2px #f1f1f1;
+border: solid 30px #f1f1f1;
 border-radius: 60px;
 display: flex;
 margin: auto;

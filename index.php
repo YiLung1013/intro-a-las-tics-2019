@@ -47,14 +47,12 @@ width: auto;;
 			<div class="contentindex">
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="card card-body border-top-primary">
 							<div class="text-center">
-								<h6>Entrada</h6>
+								<h4>Entrada</h4>
 
-		                    	<button type="button" class="btn btn-outline-primary"><a class="button" href="/sistema">Sistema</a></button>
-		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1"><a class="button" href="/misitio">Mi Sitio</a></button>
+		                    	<button type="button" class="btn btn-outline-primary">Sistema</button>
+		                    	<button type="button" class="btn bg-transparent text-primary border-primary ml-1">Mi Sitio</button>
 	                    	</div>
-						</div>
 					</div>
 				</div>
 			</div>

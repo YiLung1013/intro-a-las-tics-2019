@@ -28,7 +28,7 @@
 <style>
 
 .contentindex {
-align-items: center;
+align-items: auto;
 border: solid 2px #f1f1f1;
 border-radius: 3px;
 display: flex;
@@ -36,7 +36,7 @@ flex-direction: column;
 margin: 32px auto;
 padding: 32px;
 text-align: center;
-width: 960px;;
+width: auto;;
 }
 
 

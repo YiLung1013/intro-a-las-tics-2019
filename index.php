@@ -44,7 +44,7 @@ width: auto;;
 
 
 				<!-- Outline button (default colors) -->
-				<center>
+				<div class="contentindex">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="card card-body border-top-primary">
@@ -58,7 +58,7 @@ width: auto;;
 						</div>
 					</div>
 				</div>
-				</center>
+				</div>
 				<!-- /outline button (default colors) -->
 
 </body>
